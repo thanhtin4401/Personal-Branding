@@ -1,0 +1,38 @@
+.nav {
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 9999px;
+  height: 60px;
+  padding: 0px 16px;
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 1);
+  margin: 0px 8px;
+  
+  ul {
+    display: flex;
+    font-weight: 700;
+
+    li {
+      margin: 0px 8px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      color: #eebf41;
+    }
+  }
+
+  .contact-button {
+    border-radius: 99px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    text-transform: none;
+    background: linear-gradient(
+      90.75deg,
+      #926eef -14.98%,
+      #4ccbfc 38.83%,
+      #ff752c 93.41%,
+      #ffffff 132.61%
+    );
+  }
+}

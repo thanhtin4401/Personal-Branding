@@ -1,0 +1,51 @@
+//circle-route------------------------------------------------------------------
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  height: 500px;
+  width: 500px;
+  border: 2px solid #fff;
+  position: absolute;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff inset;
+  top: -100px;
+  left: -150px;
+  transition: 1s;
+}
+
+.circle-1 {
+  @extend .circle;
+
+  animation-duration: 6s;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+}
+
+.circle-2 {
+  @extend .circle;
+
+  animation-duration: 10s;
+  border-radius: 35% 35% 45% 45% / 35% 30% 45% 40%;
+}
+
+.circle-3 {
+  @extend .circle;
+
+  animation-duration: 4s;
+  border-radius: 45% 35% 45% 45%/45% 50% 45% 50%;
+}
+
+.circle-wrapper:hover {
+  .circle {
+    box-shadow: 0px 0px 10px #d90429, 0px 0px 10px #d90429 inset;
+    border: #d90429;
+  }
+}

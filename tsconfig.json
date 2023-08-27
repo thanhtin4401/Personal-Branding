@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src", "src/declaration.d.ts",],
+  "exclude": ["node_modules", "build", "public"]
+}

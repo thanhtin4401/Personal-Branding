@@ -1,0 +1,72 @@
+.shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.shape path {
+  //   fill: var(--bg-color);
+}
+.layer-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(201, 18, 18, 0) 10%,
+    rgb(0, 0, 0) 60vh
+  );
+}
+
+.nav-button {
+  position: fixed;
+  z-index: 20;
+  box-shadow: 0px 4px 40px 0px #fff;
+  background: white;
+  top: 1rem;
+  right: 4rem;
+}
+.explore {
+  border: 1px solid white;
+}
+
+.nav-line {
+  background: linear-gradient(225deg, #ffde87 0%, #b55dc2 100%),
+    linear-gradient(134deg, #60fef7 0%, #a355ab 100%), #fff;
+}
+.text_name {
+  background: linear-gradient(
+    100deg,
+    #b8ebff 0%,
+
+    #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text_title {
+  background: linear-gradient(
+    100deg,
+    #926eef 0%,
+    #4ccbfc 36.46%,
+    #ff752c 73.44%,
+    #fff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.line-header {
+  background: linear-gradient(
+      100deg,
+      #926eef 0%,
+      #4ccbfc 36.46%,
+      #ff752c 73.44%,
+      #fff 100%
+    ),
+    #d9d9d9;
+}
+.tag {
+  margin-right: 0.2rem;
+  color: #a355ab;
+}

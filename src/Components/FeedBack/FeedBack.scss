@@ -1,0 +1,48 @@
+.swiper {
+  // width: 100%;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  height: 37rem;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 23rem !important;
+  background-color: rgb(52, 52, 52);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(4px);
+  height: 27rem !important;
+}
+.swiper-slide-active {
+  filter: blur(0px);
+  border: 1px solid white;
+}
+
+.message-text {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.swiper-slide img {
+  display: block;
+
+  //   width: 100%;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}

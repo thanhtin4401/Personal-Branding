@@ -1,0 +1,264 @@
+.background_container {
+  background-color: #212121;
+  position: relative;
+  .sun {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.mercury {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit1 8s linear infinite;
+}
+.venus {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: 25rem;
+  animation: orbit3 8s linear infinite;
+}
+
+.venus1 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit3 8s linear infinite;
+}
+.venus2 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit4 8s linear infinite;
+}
+.venus3 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit5 8s linear infinite;
+}
+.venus4 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit6 8s linear infinite;
+}
+.venus5 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  animation: orbit7 8s linear infinite;
+}
+
+@keyframes orbit1 {
+  from {
+    transform: rotate(360deg) translateX(5rem) rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg) translateX(5rem) rotate(0deg);
+  }
+}
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(10rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(10rem) rotate(-360deg);
+  }
+}
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(360deg) translateX(20rem) rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg) translateX(20rem) rotate(0deg);
+  }
+}
+
+@keyframes orbit4 {
+  from {
+    transform: rotate(0deg) translateX(35rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(35rem) rotate(-360deg);
+  }
+}
+
+@keyframes orbit5 {
+  from {
+    transform: rotate(360deg) translateX(45rem) rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg) translateX(45rem) rotate(0deg);
+  }
+}
+
+@keyframes orbit6 {
+  from {
+    transform: rotate(0deg) translateX(55rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(55rem) rotate(-360deg);
+  }
+}
+
+@keyframes orbit7 {
+  from {
+    transform: rotate(360deg) translateX(50rem) rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg) translateX(50rem) rotate(0deg);
+  }
+}
+
+.mercury__text {
+  position: absolute;
+  left: -62px;
+  top: -11px;
+}
+
+.mercury__outline {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.3;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.venus__outline {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.4;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 25rem;
+  width: 25rem;
+}
+
+.venus__outline1 {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.5;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 40rem;
+  width: 40rem;
+}
+
+.venus__outline2 {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.6;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 55rem;
+  width: 55rem;
+}
+.venus__outline3 {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.7;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 70rem;
+  width: 70rem;
+}
+
+.venus__outline4 {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.8;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 85rem;
+  width: 85rem;
+}
+.venus__outline5 {
+  border-radius: 50%;
+  border: 1px solid white;
+  border-image-slice: 1;
+  opacity: 0.9;
+  // border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100rem;
+  width: 100rem;
+}
