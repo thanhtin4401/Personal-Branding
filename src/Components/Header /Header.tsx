@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import BackgroundCircle from "./BackgroundCircle/BackgroundCircle";
 import "./Header.scss";
+import "animate.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 const Header = () => {
   const ref = useRef(null);
@@ -15,20 +16,26 @@ const Header = () => {
       ref={ref}
       className="w-screen overflow-hidden bg-[#212121] overflow-hidden relative pt-24"
     >
-      {/* <div className="layout_background h-full w-full absolute bg-black z-10 opacity-80"></div> */}
+      <div className="overlay__tranform"></div>
       <BackgroundCircle />
-      {/* <div className=""></div> */}
       <motion.img
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         style={{
           y: textY,
         }}
         src="https://res.cloudinary.com/dvzingci9/image/upload/v1693048037/Figma_Logo_wib2na.png"
-        className="layput_figma absolute z-30 -bottom-[9rem] -left-[8rem] mb:hidden sm:hidden xl:block"
+        className="animate__fadeInUp layput_figma absolute z-30 -bottom-[9rem] -left-[4rem] mb:hidden sm:hidden xl:block"
         alt=""
       />
       <motion.img
+        animate={{ x: -100 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        style={{
+          y: textY,
+        }}
         src="https://res.cloudinary.com/dvzingci9/image/upload/v1693048022/takeaway-cup-dynamic-color_p1258h.png"
-        className="layput_figma absolute z-30 -bottom-[9rem] -right-[8rem] mb:hidden sm:hidden md:block"
+        className="animate__fadeInUp layput_figma absolute z-30 -bottom-[9rem] right-[5rem] mb:hidden sm:hidden md:block"
         alt=""
       />
       <div className="w-full  container relative z-20 flex bottom-0 flex-col items-center justify-center ">
@@ -36,7 +43,7 @@ const Header = () => {
           style={{
             y: textY,
           }}
-          className="mb:w-full sm:w-full xl:w-2/4 
+          className="animate__zoomInDown mb:w-full sm:w-full xl:w-2/4 
           flex
           md:justify-center
           md:items-center
@@ -46,6 +53,13 @@ const Header = () => {
           mb:items-start
           flex-col
         "
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
         >
           <h1 className="text-[2.5rem] font-bold text_name">THANH TIN</h1>
           <h1 className="text-[2.5rem] font-bold text_title">DEVELOP</h1>
@@ -77,16 +91,30 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="explore rounded-full py-2 px-4 inline">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            whileTap={{ scale: 0.9 }}
+            className="explore cursor-pointer rounded-full py-2 px-4 inline"
+          >
             <h1 className="text-white">explore</h1>
-          </div>
+          </motion.div>
         </motion.div>
 
         <motion.div
-          // style={{
-          //   y: textY,
-          // }}
-          className="w-full flex justify-center mt-8"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+          className="animate__bounceInUp w-full flex justify-center mt-8"
         >
           <img
             src="https://res.cloudinary.com/dvzingci9/image/upload/v1693017208/Header_right2_fbj7ki.png"

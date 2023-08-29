@@ -37,25 +37,25 @@ const FeedBack = () => {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="feed_back">
             <TestimonialBox />
           </SwiperSlide>
         </Swiper>

@@ -16,6 +16,15 @@
   );
 }
 
+.overlay__tranform {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  width: 100%;
+  position: absolute;
+  z-index: 40;
+  bottom: 0;
+  height: 20rem;
+}
+
 .nav-button {
   position: fixed;
   z-index: 20;

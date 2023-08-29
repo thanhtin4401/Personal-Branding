@@ -5,7 +5,7 @@
   height: 37rem;
 }
 
-.swiper-slide {
+.swiper-slide.feed_back {
   background-position: center;
   background-size: cover;
   width: 23rem !important;
@@ -16,7 +16,7 @@
   filter: blur(4px);
   height: 27rem !important;
 }
-.swiper-slide-active {
+.swiper-slide-active.feed_back {
   filter: blur(0px);
   border: 1px solid white;
 }

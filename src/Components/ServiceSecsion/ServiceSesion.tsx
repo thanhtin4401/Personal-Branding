@@ -3,7 +3,72 @@ import "./ServiceSesion.scss";
 import Tilt from "react-parallax-tilt";
 const ServiceSesion = () => {
   return (
-    <div className="w-full py-12 overflow-hidden service-container flex justify-center items-center">
+    <div className="w-full py-12 relative overflow-hidden service-container flex justify-center items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="65"
+        height="65"
+        viewBox="0 0 85 85"
+        fill="none"
+        className="absolute top-14 left-[16rem]"
+      >
+        <path
+          d="M42.5 0L53.9789 31.0211L85 42.5L53.9789 53.9789L42.5 85L31.0211 53.9789L0 42.5L31.0211 31.0211L42.5 0Z"
+          fill="#BD86FE"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 85 85"
+        fill="none"
+        className="absolute top-[6rem] right-[25rem]"
+      >
+        <path
+          d="M42.5 0L53.9789 31.0211L85 42.5L53.9789 53.9789L42.5 85L31.0211 53.9789L0 42.5L31.0211 31.0211L42.5 0Z"
+          fill="#BD86FE"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 85 85"
+        fill="none"
+        className="absolute bottom-[6rem] right-[25rem]"
+      >
+        <path
+          d="M42.5 0L53.9789 31.0211L85 42.5L53.9789 53.9789L42.5 85L31.0211 53.9789L0 42.5L31.0211 31.0211L42.5 0Z"
+          fill="#BD86FE"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 85 85"
+        fill="none"
+        className="absolute bottom-[rem] right-[10rem]"
+      >
+        <path
+          d="M42.5 0L53.9789 31.0211L85 42.5L53.9789 53.9789L42.5 85L31.0211 53.9789L0 42.5L31.0211 31.0211L42.5 0Z"
+          fill="#CBED46"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 85 85"
+        fill="none"
+        className="absolute bottom-[6rem] left-[10rem]"
+      >
+        <path
+          d="M42.5 0L53.9789 31.0211L85 42.5L53.9789 53.9789L42.5 85L31.0211 53.9789L0 42.5L31.0211 31.0211L42.5 0Z"
+          fill="#FFC224"
+        />
+      </svg>
       <div className="container">
         <div className="service-content flex flex-col justify-center items-center mb-16">
           <h1 className="text-white text-[1.8rem] text-first font-medium">
