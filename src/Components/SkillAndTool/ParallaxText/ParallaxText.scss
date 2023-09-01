@@ -1,17 +1,28 @@
 .parallax {
   overflow: hidden;
-  //   letter-spacing: -2px;
+  width: 120%;
+  left: -2rem;
   line-height: 0.8;
   margin: 0;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
+  background: linear-gradient(
+      91deg,
+      #926eef -14.98%,
+      #4ccbfc 38.83%,
+      #ff752c 93.41%,
+      #fff 132.61%
+    ),
+    #b14dff;
+
+  transform: rotate(-6deg);
 }
 
 .parallax .scroller {
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 64px;
+  // font-size: 64px;
   display: flex;
   //   white-space: nowrap;
   display: flex;
@@ -19,9 +30,9 @@
 }
 
 .parallax span {
-  display: block;
   margin-right: 10px;
   color: white;
+  font-size: 23px;
 }
 
 .section {

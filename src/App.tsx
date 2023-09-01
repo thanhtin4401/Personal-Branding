@@ -30,7 +30,7 @@ const App = () => {
   window.addEventListener("scroll", closeNav);
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <NavBar
         className="animate__fadeOutDown animate__animated"
         isActive={activeNavigate}

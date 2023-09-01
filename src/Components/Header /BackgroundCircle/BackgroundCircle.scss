@@ -1,5 +1,12 @@
 .background_container {
-  background-color: #212121;
+  // background-color: #212121;
+  fill: conic-gradient(
+    from 172deg at 55.63% 54.08%,
+    #e230ff 0deg,
+    #5aa6ed 120.00000357627869deg,
+    #fed43e 305.41841983795166deg,
+    #41a4ff 360deg
+  );
   position: relative;
   .sun {
     height: 120px;
@@ -21,11 +28,11 @@
   top: 42%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  animation: orbit1 8s linear infinite;
+  animation: orbit1 1s linear infinite;
 }
 .venus {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
@@ -34,12 +41,14 @@
   transform: translate(-50%, -50%);
   z-index: 20;
   animation: 25rem;
-  animation: orbit3 8s linear infinite;
+  transform: translate(11rem);
+
+  // animation: orbit1 1s linear infinite;
 }
 
 .venus1 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
@@ -47,69 +56,77 @@
   top: 42%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  animation: orbit3 8s linear infinite;
+  transform: translate(21.5rem);
+  // animation: orbit3 1s linear infinite;
 }
 .venus2 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   left: 43%;
   top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translate(-20.5rem, -12rem);
   z-index: 20;
-  animation: orbit4 8s linear infinite;
+
+  // animation: orbit4 8s linear infinite;
 }
 .venus3 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   left: 43%;
   top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translate(38.5rem, 2rem);
   z-index: 20;
-  animation: orbit5 8s linear infinite;
+  // animation: orbit5 8s linear infinite;
 }
 .venus4 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   left: 43%;
   top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translate(-38rem, 4rem);
   z-index: 20;
-  animation: orbit6 8s linear infinite;
+  // animation: orbit6 8s linear infinite;
 }
 .venus5 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   left: 43%;
   top: 42%;
-  transform: translate(-50%, -50%);
+  transform: translate(-33rem, -25rem);
   z-index: 20;
-  animation: orbit7 8s linear infinite;
+  // animation: orbit7 8s linear infinite;
 }
 
 @keyframes orbit1 {
-  from {
-    transform: rotate(360deg) translateX(5rem) rotate(-360deg);
+  0% {
+    transform: rotate(0deg) translate(12rem) rotate(0deg);
   }
-  to {
-    transform: rotate(0deg) translateX(5rem) rotate(0deg);
+  100% {
+    transform: rotate(360deg) translateX(12rem) rotate(-360deg);
   }
+  // from {
+  //   transform: rotate(360deg) translateX(5rem) rotate(-360deg);
+  // }
+  // to {
+  //   transform: rotate(0deg) translateX(5rem) rotate(0deg);
+  // }
 }
 
 @keyframes orbit2 {
   from {
-    transform: rotate(0deg) translateX(10rem) rotate(0deg);
+    transform: rotate(0deg) translateX(11rem) rotate(0deg);
   }
   to {
     transform: rotate(360deg) translateX(10rem) rotate(-360deg);
@@ -181,7 +198,7 @@
   width: 10rem;
 }
 
-.venus__outline {
+.circle {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;
@@ -195,7 +212,7 @@
   width: 25rem;
 }
 
-.venus__outline1 {
+.circle1 {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;
@@ -209,7 +226,7 @@
   width: 40rem;
 }
 
-.venus__outline2 {
+.circle2 {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;
@@ -222,7 +239,7 @@
   height: 55rem;
   width: 55rem;
 }
-.venus__outline3 {
+.circle3 {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;
@@ -236,7 +253,7 @@
   width: 70rem;
 }
 
-.venus__outline4 {
+.circle4 {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;
@@ -249,7 +266,7 @@
   height: 85rem;
   width: 85rem;
 }
-.venus__outline5 {
+.circle5 {
   border-radius: 50%;
   border: 1px solid white;
   border-image-slice: 1;

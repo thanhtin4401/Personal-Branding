@@ -10,9 +10,9 @@ import ParallaxText from "./ParallaxText/ParallaxText";
 const SkillAndTool = () => {
   return (
     // <section>
-    <>
+    <div className="relative">
       <ParallaxText baseVelocity={-2}>Framer Motion</ParallaxText>
-    </>
+    </div>
   );
 };
 
